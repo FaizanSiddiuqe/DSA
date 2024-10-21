@@ -24,8 +24,8 @@ if (head == NULL)
 {
    while (temp != NULL)
 {
-     count++;
     temp = temp->next;
+    count++;
 }
 return count;
 }
