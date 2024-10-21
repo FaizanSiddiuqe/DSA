@@ -42,6 +42,36 @@ void insertAtFirst(Node *&head, int data)
     head = newNode;
 }
 
+// delete the node
+void deleteNode(Node *&head, int val)
+{
+    // check the head null or not
+    if (head == NULL)
+        return;
+    Node *temp = head;
+    // when data of first node match
+
+    if (temp->data == val)
+    {
+
+        head = head->next;
+        delete temp;
+        return;
+    }
+
+    while (temp->next != NULL)
+    {
+        // when have to delete another node according to given condition
+        if (temp->next->data == val)
+        {
+            Node *deleteToNode = temp->next;
+            temp->next = temp->next->next;
+            delete deleteToNode;
+        }
+        temp = temp->next;
+    }
+}
+
 // print all the nodes
 void printAllNodes(Node *head)
 {
@@ -66,6 +96,11 @@ int main()
     insertAtEnd(head, 14);
     // inserting the node at the first of the linkedList
     insertAtFirst(head, 11);
+
+    // delete the node
+    deleteNode(head,11);
+    deleteNode(head, 12);
+
     // printing the nodes
     printAllNodes(head);
 
