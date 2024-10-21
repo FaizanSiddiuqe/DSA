@@ -22,7 +22,7 @@ if (head == NULL)
    return 0;
 }else
 {
-   while (temp->next != NULL)
+   while (temp != NULL)
 {
      count++;
     temp = temp->next;
