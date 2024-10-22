@@ -66,6 +66,7 @@ void deleteNode(Node *&head, int val)
         {
             Node *deleteToNode = temp->next;
             temp->next = temp->next->next;
+            head = temp->next;
             delete deleteToNode;
         }
         temp = temp->next;
