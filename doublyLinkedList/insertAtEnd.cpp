@@ -18,7 +18,7 @@ public:
     }
 };
 
-// function of insertsion of node to and end
+// function of insertsion of node to an end
 void insertAtEnd(Node *&head, int data)
 {
     Node *newNode = new Node(data);
