@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 class Node
@@ -74,7 +73,6 @@ int Top(Node *head)
     if (head == nullptr)
     {
         cout << "Stack is Empty:: ";
-        return;
     }
 
     // other wise we will return the Node
