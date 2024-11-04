@@ -99,7 +99,14 @@ int main()
 {
     Node *front = nullptr;
     Node *back = nullptr;
-    enQueue(front, back, 12);
+    /*
+    int data;
+    // take data from user
+    cout<<"Enter data:: ";
+    cin>>data;
+    enQueue(front, back, data);
+    */
+    // optional data
     enQueue(front, back, 14);
     enQueue(front, back, 16);
     cout << boolalpha;
