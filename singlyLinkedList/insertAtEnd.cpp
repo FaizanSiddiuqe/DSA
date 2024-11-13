@@ -12,6 +12,7 @@ public:
         data = val;
         next = NULL;
     }
+    
 };
 
 // inserting value at the end of the node

@@ -7,8 +7,7 @@ public:
     int data;
     Node *next;
     // constructor for creating new node
-    Node(int val)
-    {
+    Node(int val)    {
         data = val;
         next = NULL;
     }
