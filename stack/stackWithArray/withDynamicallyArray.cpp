@@ -81,7 +81,7 @@ int main()
     int size = 5;               // initialize the stack size
     int *stack = new int[size]; // declare as dynamically
     // call push function
-    push(stack, 12);
+    push(stack, 12, size);
     // call the pop function
     // pop(stack);
     // call the isEmpty function
